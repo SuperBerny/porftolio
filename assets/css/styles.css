@@ -111,11 +111,11 @@ header .profile-image:hover {
   border-color: #ff7c5e;
 }
 
-.card2:hover {
+.col-6:nth-child(even) .card:hover {
   border-color: #ff7c5e;
 }
 
-.card2 > .card-github:hover {
+.col-6:nth-child(even) .card-github:hover {
   color: #75dcff;
 }
 
