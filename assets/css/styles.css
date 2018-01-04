@@ -23,6 +23,7 @@ a:hover {
 
 /* Section Styles */
 main {
+  display: flex;
   text-align: center;
 }
 
@@ -214,6 +215,7 @@ a.social:hover {
 
   main {
     padding-top: 50px;
+    margin: 30px;
   }
 
   main p {
