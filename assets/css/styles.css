@@ -111,8 +111,12 @@ header .profile-image:hover {
   border-color: #ff7c5e;
 }
 
-.projects:nth-child(even):hover {
+.card2:hover {
   border-color: #ff7c5e;
+}
+
+.card2 > .card-github:hover {
+  color: #75dcff;
 }
 
 .card-title {
@@ -124,11 +128,10 @@ header .profile-image:hover {
 }
 
 .card-image {
-  margin: auto;
-  padding: 5px;
+  margin: auto 10px;
+  padding: 8px;
   height: 80%;
   width: 80%;
-  justify-content: center;
 }
 
 .card-github {
