@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  position: relative; }
+
+body {
+  box-sizing: border-box;
+  max-width: 114rem;
+  margin: 0 auto;
+  background: #cecece; }
+
+.header {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  height: 100vh; }
+  .header__left {
+    background-image: linear-gradient(to right, rgba(206, 206, 206, 0.2), rgba(255, 255, 255, 0.4)), url(img/headshot.jpg);
+    background-size: cover;
+    background-position: center top; }
+  .header__right {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: black;
+    height: 100%; }
+  .header .header__nav {
+    width: 100%;
+    height: 100%;
+    border: 1px solid white; }
+    .header .header__nav-home {
+      background-color: white; }
