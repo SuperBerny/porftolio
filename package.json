@@ -1,0 +1,22 @@
+{
+  "name": "porftolio",
+  "version": "1.0.0",
+  "description": "Portfolio page",
+  "main": "app.js",
+  "scripts": {
+    "sass": "node-sass sass/main.scss assets/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuperBerny/porftolio.git"
+  },
+  "author": "Brian Patrick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SuperBerny/porftolio/issues"
+  },
+  "homepage": "https://github.com/SuperBerny/porftolio#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
