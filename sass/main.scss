@@ -1,3 +1,4 @@
+// import everything here to be compiled on your style.css page later
 @import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/variables";
@@ -7,6 +8,11 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "components/about";
+
 @import "layout/header";
 
 @import "pages/home";
+
+
+

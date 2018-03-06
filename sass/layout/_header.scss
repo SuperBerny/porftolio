@@ -1,65 +1,89 @@
 .header {
-   display: grid;
-   grid-template-columns: 50% 50%;
+   background-image: 
+   linear-gradient(
+      rgba(rgb(24, 161, 24), .2),
+      rgba(orange, .3)),
+      url(../img/background.jpg);
+   background-position: top;
+   background-size: cover;
+   background-repeat: no-repeat;
+   // parallax
+   background-attachment: fixed;
+   width: 100%;
    height: 100vh;
+   position: relative;
+   display: inline-block;
+   clip-path: polygon(0 0, 100% 0, 100% 99vh, 0 90vh);
+   // border-bottom-left-radius: 90% 20%;
+   z-index: 5;
 
-   &__left {
-      background-image: 
-         linear-gradient(
-            to right,
-            rgba($palette-blue, .2),
-            rgba($color-white, .4)),
-            url(img/headshot.jpg);
-      background-size: cover;
-      background-position: center top;
-      box-shadow: 
-   }
+   &__textbox {
+      font-family: mv boli;
+      font-size: 3rem;
+      font-weight: 700;
+      text-align: center;
+      color: $color-white;
+      max-width: 40%;
+      height: 40%;
+      margin: auto;
+      padding-top: 2rem; 
 
-   &__right {
-      display: grid;
-      grid-template-columns: 1fr;
-      // background-color: black;
-      height: 100%;
-   }
-
-   .header__nav {
-      width: 100%;
-      height: 100%;
-        
-      &--about {
-         background-color: lighten($palette-yellow, 5%);
-      }
-
-      &--gallery {
-         display: grid;
-         grid-template-columns: auto auto;
-         background-color: $palette-blue;
-
-         &-1 {
-            background-image: url(img/kuche.png);
-            background-size: cover;
-         }
-         
-         &-2 {
-            background-image: url(img/veve.png);
-            background-size: cover;
-         }
-         
-         &-3 {
-            background-image: url(img/h2go.png);
-            background-size: cover;
-         }
-         
-         &-4 {
-            background-image: url(img/drumset.png);
-            background-size: cover;
-         }
-      }
-
-      &--contact {
-         background-color: $palette-orange;
-      }
    }
 }
 
+.logo-container {
+   margin: auto;
+   margin-top: 4rem;
+   height: 180px;
+   width: 180px;
+   border: 10px solid $color-white;
+   border-radius: 50%;
+}
 
+.logo {
+   width: 100%;
+   height: 100%;
+   fill: $color-white;
+}
+
+.nav {
+   text-decoration: none;
+   text-align: center;
+
+   &__link {
+      display: inline-block;
+      font-size: 2.2rem;
+      color: $color-white;
+      font-family: mv boli;
+      padding: 2rem;
+      margin: 0 .5rem;
+      max-width: 11rem;
+      transition: transform .2s, background-color .3s;
+      border-radius: .5rem;
+      box-shadow: 0 .2rem .6rem 0 rgba($color-black, .2);
+      
+
+      &-1 {
+         background-color: rgba($color-link-brown, .5);
+      }
+      
+      &-2 {
+         background-color: rgba($color-link-blue, .8);
+      }
+      
+      &-3 {
+         background-color: rgba($color-link-green, .8);
+      }
+
+   }
+
+   &__link:hover {
+      color: $color-white;
+      background-color: transparent;
+   }
+
+   &__link:active {
+      color: $color-white;
+      transform: translateY(.22rem);
+   }
+}

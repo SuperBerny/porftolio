@@ -1,17 +1,13 @@
 * {
-   margin: 0;
    padding: 0;
-   box-sizing: inherit;
+   margin: 0;
+   box-sizing: inherit
 }
 
 html {
    font-size: 62.5%;
-   position: relative;
 }
 
 body {
    box-sizing: border-box;
-   max-width: 114rem;
-   margin: 0 auto;
-   background: $color-grey-light;
 }
