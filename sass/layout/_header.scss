@@ -57,7 +57,7 @@
       font-family: mv boli;
       padding: 2rem;
       margin: 0 .5rem;
-      max-width: 11rem;
+      max-width: 13rem;
       transition: transform .2s, background-color .3s;
       border-radius: .5rem;
       box-shadow: 0 .2rem .6rem 0 rgba($color-black, .2);
@@ -73,6 +73,7 @@
       
       &-3 {
          background-color: rgba($color-link-green, .8);
+         text-align: center;
       }
 
    }

@@ -13,25 +13,47 @@ body {
   height: 100vh;
   width: 100%;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 30% 70%;
   clip-path: polygon(0 -90vh, 100% 0, 100% 100vh, 0 85vh);
-  transform: translateY(-10rem);
+  transform: translateY(-14.2rem);
   z-index: 3; }
-  .about__me {
-    background-color: #eee; }
+  .about__bio {
+    background-image: linear-gradient(rgba(238, 238, 238, 0.2), rgba(255, 255, 255, 0.3)), url(../img/headshot.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat; }
   .about__experience {
     background-color: #4e6172; }
 
-.header-experience {
-  margin-top: 15rem;
-  font-size: 2.2rem; }
+.center-container {
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 70%;
+  position: relative; }
 
-.progress-bars {
-  margin-left: 2rem;
-  margin-top: 2rem;
-  height: 300px;
-  width: 300px;
-  background-color: black; }
+.skill-container {
+  position: absolute;
+  display: inline-block;
+  width: 30%;
+  height: 60rem;
+  top: 10rem; }
+  .skill-container__list {
+    list-style: none; }
+  .skill-container:not(:last-child) {
+    margin-right: 3rem; }
+  .skill-container__frontend {
+    top: 20%;
+    left: 2%;
+    background-color: rgba(191, 128, 64, 0.8); }
+  .skill-container__backend {
+    top: 30%;
+    left: 35%;
+    background-color: #b1d0ba; }
+  .skill-container__frameworks {
+    top: 40%;
+    right: 2%;
+    background-color: #4b844d; }
 
 .header {
   background-image: linear-gradient(rgba(24, 161, 24, 0.2), rgba(255, 165, 0, 0.3)), url(../img/background.jpg);
@@ -79,7 +101,7 @@ body {
     font-family: mv boli;
     padding: 2rem;
     margin: 0 .5rem;
-    max-width: 11rem;
+    max-width: 13rem;
     transition: transform .2s, background-color .3s;
     border-radius: .5rem;
     box-shadow: 0 0.2rem 0.6rem 0 rgba(0, 0, 0, 0.2); }
@@ -88,7 +110,8 @@ body {
     .nav__link-2 {
       background-color: rgba(177, 208, 186, 0.8); }
     .nav__link-3 {
-      background-color: rgba(75, 132, 77, 0.8); }
+      background-color: rgba(75, 132, 77, 0.8);
+      text-align: center; }
   .nav__link:hover {
     color: #fff;
     background-color: transparent; }
@@ -98,4 +121,4 @@ body {
 
 .section-about {
   height: 1000px;
-  width: 100vw; }
+  width: 100%; }
