@@ -18,7 +18,7 @@ body {
   transform: translateY(-14.2rem);
   z-index: 3; }
   .about__bio {
-    background-image: linear-gradient(rgba(238, 238, 238, 0.2), rgba(255, 255, 255, 0.3)), url(../img/headshot.jpg);
+    background-image: linear-gradient(rgba(238, 238, 238, 0.6), rgba(255, 255, 255, 0.6)), url(../img/headshot.jpg);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat; }
@@ -39,12 +39,14 @@ body {
   height: 60rem;
   top: 10rem; }
   .skill-container__list {
-    list-style: none; }
+    list-style: none;
+    text-align: left;
+    padding-left: 2rem; }
   .skill-container:not(:last-child) {
-    margin-right: 3rem; }
+    margin-right: 2rem; }
   .skill-container__frontend {
     top: 20%;
-    left: 2%;
+    left: 3rem;
     background-color: rgba(191, 128, 64, 0.8); }
   .skill-container__backend {
     top: 30%;
@@ -52,8 +54,15 @@ body {
     background-color: #b1d0ba; }
   .skill-container__frameworks {
     top: 40%;
-    right: 2%;
+    right: 3rem;
     background-color: #4b844d; }
+
+.progress-bar {
+  margin: 0 auto;
+  width: 80%;
+  height: 2.4rem;
+  background-color: #a0a0a0;
+  border-radius: .5rem; }
 
 .header {
   background-image: linear-gradient(rgba(24, 161, 24, 0.2), rgba(255, 165, 0, 0.3)), url(../img/background.jpg);
