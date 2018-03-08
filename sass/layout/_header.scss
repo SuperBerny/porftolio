@@ -49,6 +49,7 @@
    text-decoration: none;
    text-align: center;
 
+
    &__link {
       display: inline-block;
       font-size: 2.2rem;
@@ -56,7 +57,7 @@
       font-family: mv boli;
       padding: 2rem;
       margin: 0 .5rem;
-      max-width: 13rem;
+      width: 11rem;
       transition: transform .2s, background-color .3s;
       border-radius: .5rem;
       box-shadow: 0 .2rem .6rem 0 rgba($color-black, .2);

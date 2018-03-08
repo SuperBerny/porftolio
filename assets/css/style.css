@@ -10,40 +10,54 @@ body {
   box-sizing: border-box; }
 
 .about {
+  font-family: mv boli;
   height: 100vh;
   width: 100%;
   display: grid;
   grid-template-columns: 30% 70%;
+  -webkit-clip-path: polygon(0 -90vh, 100% 0, 100% 100vh, 0 85vh);
   clip-path: polygon(0 -90vh, 100% 0, 100% 100vh, 0 85vh);
   transform: translateY(-14.2rem);
   z-index: 3; }
   .about__bio {
-    background-image: linear-gradient(rgba(238, 238, 238, 0.6), rgba(255, 255, 255, 0.6)), url(../img/headshot.jpg);
+    background-image: linear-gradient(rgba(238, 238, 238, 0.2), rgba(255, 255, 255, 0.2)), url(../img/headshot.jpg);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat; }
   .about__experience {
-    background-color: #4e6172; }
+    background-color: #4e6172;
+    box-shadow: inset 6px 6px 35px -8px rgba(0, 0, 0, 0.75); }
 
 .center-container {
   text-align: center;
   display: block;
   width: 100%;
-  height: 70%;
+  height: 80%;
   position: relative; }
 
 .skill-container {
   position: absolute;
-  display: inline-block;
   width: 30%;
-  height: 60rem;
-  top: 10rem; }
-  .skill-container__list {
-    list-style: none;
-    text-align: left;
-    padding-left: 2rem; }
+  height: 72%;
+  top: 2rem;
+  border-radius: 1rem;
+  box-shadow: 1rem 2rem 1rem rgba(0, 0, 0, 0.2);
+  transform: skewY(2.5deg); }
   .skill-container:not(:last-child) {
     margin-right: 2rem; }
+  .skill-container__stack-title {
+    font-size: 3rem;
+    font-weight: 700;
+    padding-top: 1rem; }
+  .skill-container__list {
+    list-style: none;
+    padding-top: 2rem; }
+  .skill-container__title {
+    text-align: left;
+    font-size: 2rem;
+    padding-left: 3.5rem;
+    padding-bottom: 12px;
+    padding-top: 10px; }
   .skill-container__frontend {
     top: 20%;
     left: 3rem;
@@ -57,12 +71,22 @@ body {
     right: 3rem;
     background-color: #4b844d; }
 
+.skill-container > * {
+  transform: skewY(-2.5deg); }
+
 .progress-bar {
+  position: relative;
   margin: 0 auto;
   width: 80%;
-  height: 2.4rem;
+  height: 18px;
   background-color: #a0a0a0;
-  border-radius: .5rem; }
+  border-radius: .3rem;
+  box-shadow: inset 6px 6px 35px -8px rgba(0, 0, 0, 0.75); }
+  .progress-bar__html {
+    width: 50%;
+    height: 100%;
+    margin-left: 0;
+    background-color: #ff572f; }
 
 .header {
   background-image: linear-gradient(rgba(24, 161, 24, 0.2), rgba(255, 165, 0, 0.3)), url(../img/background.jpg);
@@ -110,7 +134,7 @@ body {
     font-family: mv boli;
     padding: 2rem;
     margin: 0 .5rem;
-    max-width: 13rem;
+    width: 11rem;
     transition: transform .2s, background-color .3s;
     border-radius: .5rem;
     box-shadow: 0 0.2rem 0.6rem 0 rgba(0, 0, 0, 0.2); }
