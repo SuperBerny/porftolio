@@ -25,7 +25,10 @@ body {
     background-size: cover;
     background-repeat: no-repeat; }
   .about__experience {
-    background-color: #4e6172;
+    background-image: linear-gradient(rgba(177, 208, 186, 0.8), rgba(255, 165, 0, 0.7)), url(../img/background4.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
     box-shadow: inset 6px 6px 35px -8px rgba(0, 0, 0, 0.75); }
 
 .center-container {
@@ -49,44 +52,6 @@ body {
     font-size: 3rem;
     font-weight: 700;
     padding-top: 1rem; }
-  .skill-container__list {
-    list-style: none;
-    padding-top: 2rem; }
-  .skill-container__title {
-    text-align: left;
-    font-size: 2rem;
-    padding-left: 3.5rem;
-    padding-bottom: 12px;
-    padding-top: 10px; }
-  .skill-container__frontend {
-    top: 20%;
-    left: 3rem;
-    background-color: rgba(191, 128, 64, 0.8); }
-  .skill-container__backend {
-    top: 30%;
-    left: 35%;
-    background-color: #b1d0ba; }
-  .skill-container__frameworks {
-    top: 40%;
-    right: 3rem;
-    background-color: #4b844d; }
-
-.skill-container > * {
-  transform: skewY(-2.5deg); }
-
-.progress-bar {
-  position: relative;
-  margin: 0 auto;
-  width: 80%;
-  height: 18px;
-  background-color: #a0a0a0;
-  border-radius: .3rem;
-  box-shadow: inset 6px 6px 35px -8px rgba(0, 0, 0, 0.75); }
-  .progress-bar__html {
-    width: 50%;
-    height: 100%;
-    margin-left: 0;
-    background-color: #ff572f; }
 
 .header {
   background-image: linear-gradient(rgba(24, 161, 24, 0.2), rgba(255, 165, 0, 0.3)), url(../img/background.jpg);

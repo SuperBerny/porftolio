@@ -23,7 +23,14 @@
    }
 
    &__experience {
-      background-color: $color-blue;
+      background-image:
+      linear-gradient(
+         rgba($color-link-blue, .8),
+         rgba(orange, .7)),
+         url(../img/background4.jpg);
+      background-position: bottom;
+      background-size: cover;
+      background-repeat: no-repeat;
       box-shadow: inset 6px 6px 35px -8px rgba(0,0,0,0.75);
    }
 }
@@ -60,60 +67,9 @@
       padding-top: 1rem;
    }
 
-   &__list {
-      list-style: none;
-      padding-top: 2rem;
-   }
-
-   &__title {
-      text-align: left;
-      font-size: 2rem;
-
-      padding-left: 3.5rem;
-      padding-bottom: 12px;
-      padding-top: 10px;
-   }
-
-   &__frontend {
-      top: 20%;
-      left: 3rem;
-      background-color: rgba($color-link-brown, .8);
-   }
-
-   &__backend {
-      top: 30%;
-      left: 35%;
-      background-color: $color-link-blue;
-   }
-
-   &__frameworks {
-      top: 40%;
-      right: 3rem;
-      background-color: $color-link-green;
-   }
 }
 
-// unskew all children of .skill-container
-.skill-container > * {
-   transform: skewY(-2.5deg);
-}
 
-.progress-bar {
-   position: relative;
-   margin: 0 auto;
-   width: 80%;
-   height: 18px;
-   background-color: $color-grey;
-   border-radius: .3rem;
-   box-shadow: inset 6px 6px 35px -8px rgba(0,0,0,0.75);
-
-   &__html {
-      width: 50%;
-      height: 100%;
-      margin-left: 0;
-      background-color: $html;
-   }
-}
 
 
 
